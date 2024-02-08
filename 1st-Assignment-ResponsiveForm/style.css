@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    background-size: cover;
+    
+}
+.container{
+    /* width: 100%;
+    max-width: 650px;
+    background: rgba(40, 64, 74,24);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white; */
+  overflow: hidden;
+  max-width: 500px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+/* .regisForm{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+} */
+.form-heading{
+
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(174, 45, 137);
+    text-shadow: 2px 2px 2px rgb(87, 80, 80);
+    border-bottom: solid 1px white;
+
+}
+.main-user-info{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 20 px;
+}
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-box label{
+  width: 95%;
+  color: rgb(100, 96, 96); 
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0; 
+}
+.user-input-box input{
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+.gender-title{
+    color: rgb(100, 96, 96);;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+    gap: 2cm;
+}
+.class-category label{
+ padding: 0 20px 0 5px;   
+}
+#gender-lable{
+    color: black;
+}
+.class-category label,
+.class-category input,
+.form-submit-btn,
+.form-check-input,
+.form-check-label
+{
+    cursor: pointer;
+}
+.form-submit-btn{
+    margin-top: 40px;
+}
+.form-submit-btn button,
+.submit-details button{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    color: rgb(249, 244, 244);
+    background-color: rgba(76, 139, 92, 0.7);
+    display: hide;
+}
+.form-submit-btn input:hover{
+    background: rgba(144, 236, 167, 0.7);
+    color: rgb(66, 66, 66);
+}
+
+/* Add your existing styles here */
+
+/* Style for submit details section */
+.submit-details {
+    display: none; /* Initially hide the submit details section */
+    margin-top: 20px;
+  }
+  
+  .submitted {
+    margin-bottom: 10px;
+    font-size: 16px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the text color as needed */
+  }
+  
+  /* Optional: Style the confirm button */
+  .submit-details button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-details button:hover {
+    background-color: #45a049;
+  }
+  .submit-details p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  .submit-details p.submitted {
+    width: 95%;
+  color: black; 
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: space-between;
+
+  }
+  
+  .submit-details p span {
+    width: 95%;
+    color: black; 
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: space-between;
+  }
+  
+  /* Media query for responsiveness */
+  @media only screen and (max-width: 600px) {
+    .container {
+      width: 90%; /* Adjust the container width for smaller screens */
+    }
+  
+    .user-input-box,
+    .gender-details-box,
+    .checkbox,
+    .form-submit-btn {
+      width: 100%; /* Make input boxes, checkboxes, and buttons full width */
+      margin-right: 0; /* Remove right margin for better spacing */
+    }
+  
+    .form-heading {
+      font-size: 24px; /* Adjust form heading font size for smaller screens */
+    }
+  }
+  
